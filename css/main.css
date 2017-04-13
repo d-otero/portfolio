@@ -1,0 +1,141 @@
+html, div, main, body, ul, li, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #0a0a0a;
+  overflow: hidden;
+  text-decoration: none;
+  list-style: none;
+  color: #cccccc;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#content {
+  display: block;
+}
+
+.wrapper, .home{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: block
+}
+
+.home {
+  text-align: center;
+}
+
+#section2 {
+  visibility: hidden;
+}
+
+.ten-center-right {
+  position: sticky;
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+  float: right;
+  max-width: 80%;
+  height: 100%;
+  max-height: 100%;
+}
+
+/*-- SVG's and Logos --*/
+
+.logo, .logo-front, .icon, #image-viewbox {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  line-height: normal;
+}
+
+.logo, .logo-front {
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+#retouching-text {
+  letter-spacing: 1px;
+}
+
+#diamond, #o-top, #o-bottom, #d-logo {
+  fill: #181818;
+}
+
+.logo-front {
+  height: 205px;
+}
+
+.header-icon {
+  height: 105px;
+}
+
+svg #main-logo, svg #main-icon {
+  position: absolute;
+}
+
+svg #main-icon {
+  padding-left: 20px;
+}
+
+text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-anchor: middle;
+  fill: #cccccc;
+}
+
+/*-- END of SVG's and Logos --*/
+/*-- Buttons --*/
+.r-button:hover {
+  transition: .7s;
+  fill: #298194;
+}
+
+.p-button:hover {
+  transition: .7s;
+  fill: #ed671b;
+}
+/*-- END of Buttons --*/
+
+header {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/*-- NAVIGATION --*/
+.icon {
+  padding-top: 10px;
+}
+
+/*-- END of NAVIGATION --*/
+/*-- IMAGE VIEWBOX --*/
+#image-viewbox {
+  top: 50%;
+  transform: translateY(-72%);
+  width: 620px;
+  max-width: 100%;
+  height: 420px;
+  margin-right: 40px;
+  background-color: #000000;
+}
+/*-- END of IMAGE VIEWBOX --*/
+
+body ::before {
+  content= '';
+}

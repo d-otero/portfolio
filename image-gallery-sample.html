@@ -1,0 +1,17 @@
+<div class="gallery">
+  <img class="maxwidth" id="switcher" src="img/" />
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('image').on('click', 'img', function(){
+      var filename= $(this).attr('img').split('/');
+      array.splice(0,2);
+      var alt= $(this).find('img').attr('alt');
+      var href= "'img/' + alt + '/' + 'filename'";
+
+      $(this).find('a').attr(href);
+    });
+    console.log(' ');
+  });
+</script>

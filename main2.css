@@ -1,0 +1,136 @@
+
+/*-- RESET --*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,section {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+a{
+  color: #000;
+  text-decoration:none;
+}
+a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #cccccc;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+  font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header,
+hgroup, main, menu, section, summary {
+  height: 100vh;
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+/*-- CUSTOM CSS --*/
+/*-- BASE CSS --*/
+nav {
+  display: inline-block;
+  position: fixed;
+  float: left;
+  width: 15%;
+  height: 100%;
+  margin: 0 0 0 15px;
+}
+/*-- CONTACT FORM --*/
+.form-content {
+  top: 50%;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+input {
+  width: 60%;
+  height: 30px;
+}
+fieldset input {
+  margin: 20px 0;
+}
+fieldset textarea {
+  resize: none;
+  min-width: 60%;
+  min-height: 100px;
+}
+button.submit {
+  border-radius: 28px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 20px;
+  background: #2a8194;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+button.submit:hover {
+  background: #ed671c;
+  text-decoration: none;
+}
+/*-- ABOUT --*/
+section.modal#about-modal {
+  background-color: #ed671c;
+}
+textarea, input {
+  min-width: 100%;
+  max-width: 100%;
+  font-size: 1em;
+  font-weight: 600;
+}
+textarea {
+  height: 200px;
+  resize: none;
+}
+input.submit {
+  width: 150px;
+  background-color: transparent;
+  float: right;
+}
+input.submit:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #ed671c;
+  color: #fff;
+}
