@@ -182,6 +182,11 @@ section .owl-carousel {
 .owl-carousel, .owl-theme, .owl-wrapper-outer {
     height: 100%;
 }
+.owl-wrapper-outer {
+  height: 90%;
+  object-position: center;
+  object-fit: cover;
+}
 .owl-carousel.owl-theme {
   display: flex;
   width: auto;
@@ -196,8 +201,8 @@ section .owl-carousel {
   position: absolute;
   display: block;
   width: 100%;
-  height: auto;
-  top: 93%;
+  top: 98%;
+  object-fit: contain;
 }
 div .lazyOwl {
   display: block;
@@ -214,8 +219,14 @@ div [data-slide-id] {
 img .lazyOwl {
   height: auto;
 }
-.owl-theme .owl-wrapper-outer .owl-wrapper .owl-item .active .loading .owl-controls .clickable .owl-pagination .owl-page {
+.section, .fp-section, .fp-table {
+  height: 100%!important;
 }
+/*--
+.owl-theme, .owl-wrapper-outer, .owl-wrapper, .owl-item, .active, .loading, .owl-controls, .clickable, .owl-pagination, .owl-page {
+  display: none,
+}
+--*/
 /*-- end --*/
 /*-- media queries --*/
 @media screen
@@ -291,6 +302,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     nav#nav ul {
       top: 20%;
     }
+    nav#nav ul li {
+      padding: 20px;
+    }
     svg#logo-main {
         transform: translateX(3%);
     }
@@ -314,13 +328,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
     #gallery-wrapper {
       padding-top: 5px;
-      max-height: 80vh;
-      height: 80vh;
+      max-height: 100vh;
+      height: 100vh;
     }
     .owl-carousel.owl-theme {
-      height: 80vh;
+      height: 100vh;
     }
     .owl-wrapper-outer,   div[data-slide-id] {
-      height: 75vh;
+      height: 92vh;
     }
-}
+    .owl-controls {
+      margin-top: 0px;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: auto;
+      top: 95%;
+    }
