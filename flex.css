@@ -10,6 +10,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+  overflow-x:  !important;
 }
 #container {
   display: block;
@@ -60,6 +61,7 @@ body {
   padding: 0;
   margin-top: 5px;
   width: 100%;
+  overflow-x: hidden;
 }
 .image {
   -webkit-box-ordinal-group: 2;
@@ -106,6 +108,13 @@ button.nav-toggle {
   top: 50%;
   transform: translateY(300%);
 }
+button.nav-close-about   {
+  transform: translateY(-210%);
+}
+button.nav-close-contact {
+  transform: translateY(0%);
+}
+
 /*-- NAVIGATION --*/
 nav#nav {
   visibility: hidden;
@@ -219,8 +228,15 @@ div [data-slide-id] {
 img .lazyOwl {
   height: auto;
 }
-.section, .fp-section, .fp-table {
-  height: 100%!important;
+.fp-tableCell {
+  display: block!important;
+}
+.owl-theme, .owl-controls {
+  margin-top: 0!important;
+  top: 75%!important;
+}
+.fullpage-wrapper {
+  height: 0%!important;
 }
 /*--
 .owl-theme, .owl-wrapper-outer, .owl-wrapper, .owl-item, .active, .loading, .owl-controls, .clickable, .owl-pagination, .owl-page {
@@ -343,5 +359,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
       display: block;
       width: 100%;
       height: auto;
-      top: 95%;
+      top: 96%!important;
+    }
+    .section, .fp-section, .fp-table {
+      height: 100vh!important;
+    }
+    .fp-tableCell {
+      display: table-cell!important;
+      padding: 0!important;
+
+    }
+    .fullpage-wrapper {
+      height: 0!important;
     }
