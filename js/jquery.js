@@ -64,12 +64,15 @@ $(document).ready(function(){
    }
 
  });
+
 	$('#fullpage').fullpage({
+    pagination: true,
     anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
     animateAnchor: true,
     menu: '#menu',
     scrollingSpeed: 1200,
 		autoScrolling: true,
+    scrolloverflow: false,
     horizontalScrolling: false,
 		fitToSection: true,
 		fitToSectionDelay: 200,
@@ -81,12 +84,11 @@ $(document).ready(function(){
 		easingcss3: 'ease',
     sectionSelector: '.section',
     normalScrollElements: '.item.a, .item.e, .gallery-wrapper, .slideshow-wrapper',
-    touchSensitivity: 50,
+    touchSensitivity: 20,
     keyboardScrolling: true,
         css3: true,
-  autoHeight: true,
-  responsiveWidth: 1023,
-  recordHistory: false,
-  mouseWheelScrolling: true
+    autoHeight: true,
+    recordHistory: false,
+    mouseWheelScrolling: true
     });
 });
