@@ -64,18 +64,17 @@ $(document).ready(function(){
    }
 
  });
-
 	$('#fullpage').fullpage({
     pagination: true,
     anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
     animateAnchor: true,
     menu: '#menu',
-    scrollingSpeed: 1200,
+    scrollingSpeed: 1000,
 		autoScrolling: true,
     scrolloverflow: false,
     horizontalScrolling: false,
 		fitToSection: true,
-		fitToSectionDelay: 200,
+		fitToSectionDelay: 50,
     resetSliders: true,
     loopTop: true,
     loopBottom: true,
@@ -84,11 +83,22 @@ $(document).ready(function(){
 		easingcss3: 'ease',
     sectionSelector: '.section',
     normalScrollElements: '.item.a, .item.e, .gallery-wrapper, .slideshow-wrapper',
-    touchSensitivity: 20,
+    touchSensitivity: 40,
     keyboardScrolling: true,
+    responsiveWidth: 767,
         css3: true,
     autoHeight: true,
-    recordHistory: false,
+    recordHistory: true,
     mouseWheelScrolling: true
     });
+    // perform the introanimate only if the introanimate flag wasn't set
+    if(sessionStorage.getItem('introanimate') !== 'yes') {  // check if introanimate flag was set
+      sessionStorage.setItem('introanimate', 'yes');      // set the introanimate flag
+      $('.introscreen').addClass('introanimate');             // perform the introanimate
+
+      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) { //remove introscreen from safari because of layout issue
+        $('.introscreen').removeClass('introanimate');
+        alert('Please use arrow keys for best viewing experience. Thank you!');
+      }
+    }
 });
