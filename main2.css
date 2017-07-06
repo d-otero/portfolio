@@ -134,3 +134,12 @@ input.submit:hover {
   background-color: #ed671c;
   color: #fff;
 }
+.nav a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav .active a {
+	color: #ffd200;
+}

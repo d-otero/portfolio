@@ -35,7 +35,6 @@ $('.image').unbind().on('click', function(){
 */
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
-      // your initial option here, again.   $('.owlCarousel').owlCarousel({
            singleItem: true,
             itemsCustom: false,
            responsive: true,
@@ -66,7 +65,7 @@ $(document).ready(function(){
  });
 	$('#fullpage').fullpage({
     pagination: true,
-    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+    anchors: ['dellaBass', 'DOtero', 'katMorgan', 'komonoWatch', 'theory-38', 'theory-men', 'TheRealReal'],
     animateAnchor: true,
     menu: '#menu',
     scrollingSpeed: 1000,
@@ -74,18 +73,17 @@ $(document).ready(function(){
     scrolloverflow: false,
     horizontalScrolling: false,
 		fitToSection: true,
-		fitToSectionDelay: 50,
+		fitToSectionDelay: 200,
     resetSliders: true,
-    loopTop: true,
     loopBottom: true,
     offsetSections: false,
 		easing: 'easeInOutCubic',
 		easingcss3: 'ease',
     sectionSelector: '.section',
     normalScrollElements: '.item.a, .item.e, .gallery-wrapper, .slideshow-wrapper',
-    touchSensitivity: 40,
+    touchSensitivity: 10,
     keyboardScrolling: true,
-    responsiveWidth: 767,
+    responsiveWidth: 1023,
         css3: true,
     autoHeight: true,
     recordHistory: true,
@@ -98,7 +96,7 @@ $(document).ready(function(){
 
       if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) { //remove introscreen from safari because of layout issue
         $('.introscreen').removeClass('introanimate');
-        alert('Please use arrow keys for best viewing experience. Thank you!');
+        alert('Please use arrow keys if using a keyboard and Google Chrome as your browser for best viewing experience. Thank you!');
       }
     }
 });
